@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam User Info</title>
+</head>
+<body>
+    <h1>Steam User Info</h1>
+    <form action="/" method="post">
+        <label for="user_id">Steam User ID:</label><br>
+        <input type="text" id="user_id" name="user_id"><br>
+        <input type="submit" value="Submit">
+    </form>
+    {% if username %}
+        <h2>Username: {{ username }}</h2>
+    {% endif %}
+</body>
+</html>
